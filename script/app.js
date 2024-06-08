@@ -76,15 +76,16 @@ rewiewAudio()
 
 
 let playing = false
+$playBtn.lastElementChild.classList.add("pauseOrBlock")
 //   audio quyadigan funksiya
 const playAudio = () => {
-   
+  
     playing = !playing
 
     if (playing) {
         $currentAudioElement.play()
         $playBtn.firstElementChild.classList.add("pauseOrBlock")
-        $playBtn.lastElementChild.classList.remove("pauseOrBlock")
+         $playBtn.lastElementChild.classList.remove("pauseOrBlock")
     }else{
         $currentAudioElement.pause()
         $playBtn.firstElementChild.classList.remove("pauseOrBlock")
@@ -101,6 +102,7 @@ const nextPlay = () =>{
     }else{
         $audioIndex = 0;
     }
+    
     rewiewAudio();
     playing = false;
     playAudio();

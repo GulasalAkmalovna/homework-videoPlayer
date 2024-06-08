@@ -109,13 +109,13 @@ button{
     top: 5px;
     left: 8px;
 }
-.bi-pause{
+.bi-pause-fill{
     font-size: 48px;
     pointer-events: none;
     position: absolute;
     top: 5px;
     left: 6px;
-    display: none;
+    /* display: none; */
     color: #000 !important;
 }
 #play-btn{
