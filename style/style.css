@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px 40px;
+}
+.image-content{
+    width: 100%;
+    max-width: 380px;
+    max-height: 380px;
+    border-radius: 18px;
+    border: none;
+    overflow: hidden;
+    background-color: red;
+        transition: 0.3s;
+    /* cursor: pointer; */
+}
+  
+.photo{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.image-content:hover{
+    transform: scale(1.02);
+}
+.text-content{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+h2{
+    font-size: 52px;
+    letter-spacing: 2px;
+    font-family: "Caveat", cursive;
+}
+.line-wrapper{
+    width: 100%;
+    max-width: 700px;
+    margin-top: 70px;
+}
+.play-line{
+    width: 100%;
+    height: 6px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(171, 171, 171);
+    display: flex;
+    align-items: center;
+}
+.fill{
+    width: 100%;
+    max-width: 25 0px;
+    border-radius: 50px;
+    height: 100%;
+    background-color: #fff;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 20px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    margin-top: 20px;
+}
+.bi-fast-forward-fill{
+    font-size: 34px;
+  color: #fff;
+  pointer-events: none;
+}
+.bi-rewind-fill{
+    font-size: 34px;
+    color: #fff;
+    pointer-events: none;
+}
+.bi-play-fill{
+    font-size: 48px;
+    color: #000000;
+    pointer-events: none;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+.bi-pause{
+    font-size: 48px;
+    pointer-events: none;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    display: none;
+    color: #000 !important;
+}
+#play-btn{
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    padding: 30px;
+    color: #000;
+}
+.pauseOrBlock{
+    display: none;
+}

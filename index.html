@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video player</title>
+    <link rel="stylesheet" href="./style/style.css">
+        <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="image-content">
+            <img class="photo" src="https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36" alt="">
+        </div>
+       <div class="text-content">
+            <h2 id="play-title">Blinding Lights</h2>
+            <p id="play-artist">The Weekend</p>
+       </div>
+       <div class="line-wrapper">
+            <div class="play-line">
+                <div class="fill"></div>
+                <div class="circle"></div>
+            </div>
+       </div>
+
+       <div class="buttons">
+            <button id="prey-btn"><i class="bi bi-rewind-fill"></i></button>
+            <button id="play-btn">
+                <i class="bi bi-play-fill"></i>
+                <i class="bi bi-pause" style="color: #000;"></i>
+            </button>
+            <button id="next-btn"><i class="bi bi-fast-forward-fill"></i></button>
+       </div>
+    </div>
+   <audio src="" id="audio-element"></audio>
+
+    <script src="./script/app.js"></script>
+</body>
+</html>
+
