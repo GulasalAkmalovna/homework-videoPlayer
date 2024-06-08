@@ -21,7 +21,6 @@
     border-radius: 18px;
     border: none;
     overflow: hidden;
-    background-color: red;
         transition: 0.3s;
     /* cursor: pointer; */
 }
